@@ -1,122 +1,74 @@
-/* filepath: c:\Users\chedli frini\Desktop\checkpoint portfolio nextjs\checkpoint_next\components\Footer.module.css */
-
 .footer {
-  background-color: rgb(36, 68, 86,0.2);
-
+  background-color: rgba(36, 68, 86, 0.2);
   padding: 20px;
   text-align: center;
-  width: 1480px;
-  position: absolute;
-  bottom: 00px;
+  width: 100%; /* Full width for responsiveness */
   display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
   justify-content: center;
   align-items: center;
-  height: 210px;
-  font-family: "Big Shoulders", sans-serif;  
-  letter-spacing: 2px; 
+  font-family: "Big Shoulders", sans-serif;
+  letter-spacing: 2px;
+  position: relative; /* Changed to relative for better responsiveness */
+  margin-top: 40px; /* Add margin to avoid overlap with content */
+}
 
-}
-.address {
-  color: rgb(224, 138, 25);
+.contactInfo {
   display: flex;
-  margin: 0;
-  gap: 10px;  
+  flex-direction: column;
+  gap: 10px; /* Adjusted gap for better spacing */
+  margin-bottom: 20px; /* Added margin for spacing */
+  color: rgb(224, 138, 25);
+  text-align: left; /* Align text to the left */
+}
 
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #666;
+  padding-bottom: 5px;
 }
-.copyRight{
+
+.address,
+.phone,
+.email,
+.copyRight {
   color: rgb(224, 138, 25);
   display: flex;
-  margin: 0;
+  align-items: center;
   gap: 10px;
+  margin: 5px 0; /* Adjusted margin for better spacing */
 }
-.address:after {
-  content: "  ";
-  display: block;
-  position: absolute;
-  right: 60px;
-  bottom: 110px;
-  width: 160px;
-  height: 1px;
-  background: rgb(224, 138, 25);
-}
-.phone{
-  color: rgb(224, 138, 25);
-  display: flex;
-  margin: 0;
-  gap: 10px;
-}
-.phone:after {
-  content: "  ";
-  display: block;
-  position: absolute;
-  right: 40px;
-  bottom: 60px;
-  width: 180px;
-  height: 1px;
-  background: rgb(224, 138, 25);
-}
-.email{
-  color: rgb(224, 138, 25);
-  display: flex;
-  margin: 0;
-  gap: 10px;
-}
+
+.address:after,
+.phone:after,
 .email:after {
-  content: "  ";
+  content: "";
   display: block;
-  position: absolute;
-  right: 3px;
-  bottom: 10px;
-  width: 215px;
+  width: 100px; /* Adjusted width for responsiveness */
   height: 1px;
   background: rgb(224, 138, 25);
+  margin-top: 5px; /* Added margin for spacing */
 }
+
 .email a {
   color: #FFF5E4;
   text-decoration: none;
 }
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  margin: 0;
-  padding: 0;
-  color: rgb(224, 138, 25);
-  position: absolute;
-  left: 120px;
-  top: 30px;
-}
-.title{
-  position: relative;
-  right: 25px;
-  border-bottom: 1px solid #666;
-   
-}
-.socialLinks {
-  color: rgb(224, 138, 25);
-  position: absolute;
-  right: 100px;
-  top: 50px;
-
-}
-.contactInfo .s{
-  color: #FFF5E4;
-}
-
 
 .socialLinks {
   list-style: none;
   padding: 0;
-
+  display: flex;
+  gap: 20px; /* Adjusted gap for better spacing */
+  margin-top: 20px; /* Added margin for spacing */
 }
-.socialLinks a{
+
+.socialLinks a {
   color: #FFF5E4;
   text-decoration: none;
-}
-
-.socialLinks li {
-  display: inline-block;
-  margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -128,4 +80,55 @@
 
 .icon:hover {
   color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .contactInfo {
+    align-items: center; /* Center align on smaller screens */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.2rem; /* Smaller font size for smaller screens */
+  }
+
+  .address:after,
+  .phone:after,
+  .email:after {
+    width: 80px; /* Adjusted width for smaller screens */
+  }
+
+  .socialLinks {
+    gap: 15px; /* Adjusted gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px; /* Further reduced padding for mobile screens */
+  }
+
+  .title {
+    font-size: 1rem; /* Smaller font size for mobile screens */
+  }
+
+  .address,
+  .phone,
+  .email,
+  .copyRight {
+    font-size: 0.9rem; /* Smaller font size for mobile screens */
+  }
+
+  .socialLinks {
+    gap: 10px; /* Adjusted gap for mobile screens */
+  }
+
+  .icon {
+    font-size: 20px; /* Smaller icon size for mobile screens */
+  }
 }
