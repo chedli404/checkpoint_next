@@ -7,3 +7,16 @@
     object-fit: cover; /* Ensures the video covers the entire container */
     z-index: -1; /* Places the video behind other content */
   }
+  /* make it responsive */
+  @media (max-width: 768px) {
+    .video {
+      height: 100%;
+    }
+  }
+  /* make it responsive for phones */
+
+  @media (max-width: 576px) {
+    .video {
+      height: 100%;
+    }
+  }
