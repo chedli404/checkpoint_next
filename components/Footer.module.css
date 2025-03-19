@@ -1,0 +1,131 @@
+/* filepath: c:\Users\chedli frini\Desktop\checkpoint portfolio nextjs\checkpoint_next\components\Footer.module.css */
+
+.footer {
+  background-color: rgb(36, 68, 86,0.2);
+
+  padding: 20px;
+  text-align: center;
+  width: 1480px;
+  position: absolute;
+  bottom: 00px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+  font-family: "Big Shoulders", sans-serif;  
+  letter-spacing: 2px; 
+
+}
+.address {
+  color: rgb(224, 138, 25);
+  display: flex;
+  margin: 0;
+  gap: 10px;  
+
+}
+.copyRight{
+  color: rgb(224, 138, 25);
+  display: flex;
+  margin: 0;
+  gap: 10px;
+}
+.address:after {
+  content: "  ";
+  display: block;
+  position: absolute;
+  right: 60px;
+  bottom: 110px;
+  width: 160px;
+  height: 1px;
+  background: rgb(224, 138, 25);
+}
+.phone{
+  color: rgb(224, 138, 25);
+  display: flex;
+  margin: 0;
+  gap: 10px;
+}
+.phone:after {
+  content: "  ";
+  display: block;
+  position: absolute;
+  right: 40px;
+  bottom: 60px;
+  width: 180px;
+  height: 1px;
+  background: rgb(224, 138, 25);
+}
+.email{
+  color: rgb(224, 138, 25);
+  display: flex;
+  margin: 0;
+  gap: 10px;
+}
+.email:after {
+  content: "  ";
+  display: block;
+  position: absolute;
+  right: 3px;
+  bottom: 10px;
+  width: 215px;
+  height: 1px;
+  background: rgb(224, 138, 25);
+}
+.email a {
+  color: #FFF5E4;
+  text-decoration: none;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  color: rgb(224, 138, 25);
+  position: absolute;
+  left: 120px;
+  top: 30px;
+}
+.title{
+  position: relative;
+  right: 25px;
+  border-bottom: 1px solid #666;
+   
+}
+.socialLinks {
+  color: rgb(224, 138, 25);
+  position: absolute;
+  right: 100px;
+  top: 50px;
+
+}
+.contactInfo .s{
+  color: #FFF5E4;
+}
+
+
+.socialLinks {
+  list-style: none;
+  padding: 0;
+
+}
+.socialLinks a{
+  color: #FFF5E4;
+  text-decoration: none;
+}
+
+.socialLinks li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #007bff;
+}
