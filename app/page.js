@@ -20,6 +20,7 @@ export default function Home() {
         <main className={styles.main}>
 
           <h1 className="home-title" style={{ animationDelay: '0s' }}  >Hi, I'm Chedli</h1>
+          <div className="home-description-container">
           <p className="home-description" style={{ animationDelay: '3s' }}>
             A passionate web development student specializing in front-end and full-stack development.
           </p>
@@ -36,6 +37,8 @@ export default function Home() {
           <a href="/projects" className="home-button" style={{ animationDelay: '20s' }}>
             View My Projects
           </a>
+          </div>
+          
         </main>
       </div>
     </div>
