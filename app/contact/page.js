@@ -2,9 +2,10 @@ import React from 'react';
 import style from './contact.module.css';
 import Footer from "/components/Footer";
 
+
 const videoBackground = {
 
-  video: '/b.mp4', // Add your video to the `public` folder
+  video: '/b.mp4', 
 };
 
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
         </video>
       </div>
       <div className={style.container}>
-        <span>Contact</span>
+        <span className={style.span2} >Contact</span>
         <span className={style.span}>Me</span>
       </div>
 
