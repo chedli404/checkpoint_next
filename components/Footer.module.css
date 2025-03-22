@@ -1,19 +1,18 @@
-/* filepath: c:\Users\chedli frini\Desktop\checkpoint portfolio nextjs\checkpoint_next\components\Footer.module.css */
 
 .footer {
   background-color: rgb(36, 68, 86,0.2);
-
   padding: 20px;
   text-align: center;
-  width: 1480px;
+  width: 1860px;
   position: absolute;
   bottom: 00px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 210px;
+  height: 200px;
   font-family: "Big Shoulders", sans-serif;  
   letter-spacing: 2px; 
+  width: 100%;
 
 }
 .address {
@@ -129,54 +128,74 @@
 .icon:hover {
   color: #007bff;
 }
-/* make it responsive */
 @media (max-width: 768px) {
   .footer {
-    width: 100%;
-    padding: 10px;
-    height: 100px;
+    width: 390px;
+    flex-direction: column;
+    position: absolute;
+    bottom:2px;
+    height: 300px;
   }
-  .address:after {
-    width: 100px;
-  }
-  .phone:after {
-    width: 100px;
-  }
-  .email:after {
-    width: 100px;
-  }
+  .body{
+    flex-direction: column;
+    
+    
+    }
   .contactInfo {
-    left: 10px;
-    top: 10px;
+    position: relative;
+    left: 20px;
+    top: 9px;
+    
   }
   .socialLinks {
-    right: 10px;
-    top: 10px;
+    position: relative;
+    right: 0px;
+    top: -40px;
   }
-}
-/* make it responsive for phones */
+  .copyRight{
+    position: relative;
+    right: 0px;
+    top: 90px;
+  }
+  .address:after {
+    content: "  ";
+    display: block;
+    position: absolute;
+    right: 80px;
+    bottom: 118px;
+    width: 100px;
+    height: 1px;
+    background: rgb(224, 138, 25);
+  }
+  .phone:after {
+    content: "  ";
+    display: block;
+    position: absolute;
+    right: 45px;
+    bottom: 68px;
+    width: 150px;
+    height: 1px;
+    background: rgb(224, 138, 25);
+  }
+  .phone a {
+    color: #FFF5E4;
+    text-decoration: none;
+  }
 
-@media (max-width: 576px) {
-  .footer {
-    width: 100%;
-    padding: 10px;
-    height: 100px;
-  }
-  .address:after {
-    width: 100px;
-  }
-  .phone:after {
-    width: 100px;
-  }
   .email:after {
-    width: 100px;
+    content: "  ";
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    width: 200px;
+    height: 1px;
+    background: rgb(224, 138, 25);
   }
-  .contactInfo {
-    left: 10px;
-    top: 10px;
-  }
-  .socialLinks {
-    right: 10px;
-    top: 10px;
-  }
+  
+ 
+
+
+  
+
 }
